@@ -7,66 +7,83 @@
     box-sizing: border-box;
 }
 
-body{
-    background: gold;
-}
 
 
 .abrigos{ 
     display: flex;
-    background: gold;
     margin: 15px;
     height: 90%;
 }
 
 
 .abrigos .columna{
-    background: rebeccapurple;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
     width: 100%;
     height: 100%;
 }
 
-.columna .columna1{
+.columna .abrigo1,
+.columna .abrigo2,
+.columna .abrigo3{
     display: flex;
+    justify-content: space-evenly;
+    align-items: center;
     width: 100%;
-    height: 40%;
+    height: 15%;
     gap: 30px;
-    background: wheat;
+    border-radius: 10px;
+    background: rgb(224, 224, 224);
 }
 
-.columna .columna2{
+.columna .total{
     display: flex;
+    justify-content: space-evenly;
+    align-items: center;
     width: 100%;
-    height: 40%;
+    height: 15%;
     gap: 30px;
-    background: wheat;
+    border-radius: 10px;
 }
 
-
-.abrigos .abrigo1,
-.abrigos .abrigo2,
-.abrigos .abrigo3,
-.abrigos .abrigo4{
-    padding: 10px;
-    background: rgb(160, 110, 110);
-    width: 100%;
+.columna .total .descripciontotal{
     display: flex;
     align-items: center;
-    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 10px;
+    width: 500px;
     gap: 10px;
 }
 
+.columna .total .descripciontotal .preciototal{
+    font-size: 10px;
+    color: rgb(123, 160, 123);
+}
 
-.abrigos .abrigo1 .descripcion,
-.abrigos .abrigo2 .descripcion,
-.abrigos .abrigo3 .descripcion,
-.abrigos .abrigo4 .descripcion{
+
+.columna .total .preciototal{
     display: flex;
-    width: 90%;
-    justify-content: space-around;
-    background: red;
+    flex-direction: column;
+}
 
+.total .botontotal{
+    background:rgb(123, 160, 123);
+    border-radius: 20px;
+    width: 200px;
+    height: 50px;
+}
+
+.total .botontotal1{
+    background:rgb(255, 255, 255);
+    border-radius: 20px;
+    border: 1px solid rgb(123, 160, 123);
+    width: 200px;
+    height: 50px;
+}
+
+header{
+    margin: 10px;
+    color: rgb(49, 87, 49);
+    font-size: 35px;
 }
