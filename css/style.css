@@ -8,30 +8,27 @@
 }
 
 
-/* CREACION DEL MENU DESPLEGABLE*/
+/*CREACION SEPARACION CON FLEX*/
+
+.container{
+    display: flex;
+    padding: 2%;
+    background: white;
+}
+
+/* CREACION DEL MENU*/
+
 
 nav{
-    width: 300px;
+    width: 250px;
 }
 
 .nav_link{
-    color:rgb(15, 50, 50);
+    color:rgb(15.abrigos .abrigo1 50, 50);
     display: block;
     padding: 15px 0;
     text-decoration: none;
 }
-
-.nav_link--inside{
-    border-radius: 6px;
-    padding-left: 20px;
-    background: red;
-    text-align: left;
-}
-
-.nav_link--inside:hover{
-    background: black;
-}
-
 
 .list{
     width: 100%;
@@ -47,72 +44,25 @@ nav{
     width: 100%;
     text-align: center;
     overflow: hidden;
-}
-
-.list_item--click{
-    cursor: pointer;
+    font-size: 15px;
 }
 
 .list_button{
     display: flex;
     align-items: center;
-    gap: 1em;
+    gap: 0.5em;
     width: 70%;
     margin: 0 auto;
 }
 
-.arrow .list_arrow{
-    transform: rotate(90deg);
+
+/*PRODUCTOS*/
+
+section .productos{
+    background: red;
+    width: 100%;
 }
 
-
-.list_arrow{
-    margin-left: auto;
-    transition: transform .3s ;
-}
-
-.list_show{
-    width: 80%;
-    margin-left: auto;
-    border-left: 2px solid salmon;
-    list-style: none;
-    transition: height .4s;
-    height:0;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-header{
-    background: orange;
-}
-
-.dashboard {
-    background: blue;
-}
-
-.home{
-    background: green;
-}
-
-.container-4{
-    background: darkmagenta;
-}
-
-.container-holamundo{
-    background: fuchsia;
-}
 
 
 
